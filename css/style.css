@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(89, 196, 231);
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+header::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header *{
+    z-index: 1;
+}
+
+header h1{
+    margin: 0 0 30px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+input:focus,
+button:focus{
+    outline: none;
+}
+
+form{
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+form input{
+    border: 0;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+form button{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(240, 16, 147);
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 30px;
+}
+
+.btn{
+    border: 0;
+    border-radius: 10px;
+    padding: 4px 10px;
+    color: #fff;
+    background-color: plum;
+}
+
+ul.som{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.som li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.centraded{
+    display: flex;
+    justify-content: center;
+}
+
+.centraded button{
+    margin: 15px;
+    transform: scale(1.3);
+}
+
+.container{
+    margin: 30px auto;
+    max-width: 100%;
+    width: 500px;
+}
+
+.container h2{
+    font-weight: 300;
+}
+
+.container p{
+    text-align: center;
+}
